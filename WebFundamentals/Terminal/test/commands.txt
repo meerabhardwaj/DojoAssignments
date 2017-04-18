@@ -1,0 +1,31 @@
+
+Katharines-MacBook-Air:Desktop meerabhardwaj$ mkdir test
+Katharines-MacBook-Air:Desktop meerabhardwaj$ cd test/
+Katharines-MacBook-Air:test meerabhardwaj$ touch index.html
+Katharines-MacBook-Air:test meerabhardwaj$ touch style.css
+Katharines-MacBook-Air:test meerabhardwaj$ commands.txt
+-bash: commands.txt: command not found
+Katharines-MacBook-Air:test meerabhardwaj$ touch commands.txt
+Katharines-MacBook-Air:test meerabhardwaj$ ls
+commands.txt	index.html	style.css
+Katharines-MacBook-Air:test meerabhardwaj$ cp index.html index_2.html
+Katharines-MacBook-Air:test meerabhardwaj$ ls
+commands.txt	index.html	index_2.html	style.css
+Katharines-MacBook-Air:test meerabhardwaj$ rm style.css 
+Katharines-MacBook-Air:test meerabhardwaj$ ls
+commands.txt	index.html	index_2.html
+Katharines-MacBook-Air:test meerabhardwaj$ cd ..
+Katharines-MacBook-Air:Desktop meerabhardwaj$ mkdir destination
+Katharines-MacBook-Air:Desktop meerabhardwaj$ mv test/index_2.html destination/
+Katharines-MacBook-Air:Desktop meerabhardwaj$ cd destination/
+Katharines-MacBook-Air:destination meerabhardwaj$ ls
+index_2.html
+Katharines-MacBook-Air:destination meerabhardwaj$ cd ..
+Katharines-MacBook-Air:Desktop meerabhardwaj$ cd test/
+Katharines-MacBook-Air:test meerabhardwaj$ ls
+commands.txt	index.html
+Katharines-MacBook-Air:test meerabhardwaj$ cd ..
+Katharines-MacBook-Air:Desktop meerabhardwaj$ rm -rf destination/
+Katharines-MacBook-Air:Desktop meerabhardwaj$ cd test/
+Katharines-MacBook-Air:test meerabhardwaj$ open commands.txt 
+Katharines-MacBook-Air:test meerabhardwaj$ 
