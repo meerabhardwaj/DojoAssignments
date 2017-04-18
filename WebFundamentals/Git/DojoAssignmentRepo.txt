@@ -1,0 +1,242 @@
+st login: Mon Apr 17 18:54:54 on ttys000
+Katharines-MacBook-Air:~ meerabhardwaj$ cd Desktop/
+Katharines-MacBook-Air:Desktop meerabhardwaj$ cd DojoAssignments/
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git init
+Initialized empty Git repository in /Users/meerabhardwaj/Desktop/DojoAssignments/.git/
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	MEAN/
+	Python/
+	Ruby/
+	WebFundamentals/
+	assignments.txt
+	iOS/
+	netCore/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git add .
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git commit -m "created initial directories for assignments and completed assignments for HTML"
+[master (root-commit) 46293fc] created initial directories for assignments and completed assignments for HTML
+ 31 files changed, 591 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 MEAN/about.txt
+ create mode 100644 Python/about.txt
+ create mode 100644 Ruby/about.txt
+ create mode 100644 WebFundamentals/.DS_Store
+ create mode 100644 WebFundamentals/CSS/about.txt
+ create mode 100644 WebFundamentals/Git/.DS_Store
+ create mode 100644 WebFundamentals/Git/about.txt
+ create mode 100644 WebFundamentals/Git/git_commands.txt
+ create mode 160000 WebFundamentals/Git/gittest
+ create mode 160000 WebFundamentals/Git/new_project
+ create mode 100644 WebFundamentals/HTML/.DS_Store
+ create mode 100644 WebFundamentals/HTML/about.txt
+ create mode 100644 WebFundamentals/HTML/fake_blog.html
+ create mode 100644 WebFundamentals/HTML/form_practice.html
+ create mode 100644 WebFundamentals/HTML/indentation_practice.html
+ create mode 100644 WebFundamentals/Javascript/about.txt
+ create mode 100644 WebFundamentals/Terminal/NewProjectFolder/copyweird2.html
+ create mode 100644 WebFundamentals/Terminal/NewProjectFolder/weird2.html
+ create mode 100644 WebFundamentals/Terminal/NewProjectFolder/weirdo.css
+ create mode 100644 WebFundamentals/Terminal/NewProjectFolder/whatsupppp.html
+ create mode 100644 WebFundamentals/Terminal/copyweird2.html
+ create mode 100644 WebFundamentals/Terminal/test/commands.txt
+ create mode 100644 WebFundamentals/Terminal/test/index.html
+ create mode 100644 WebFundamentals/Terminal/weird2.html
+ create mode 100644 WebFundamentals/Terminal/weirdo.css
+ create mode 100644 WebFundamentals/Terminal/whatsupppp.html
+ create mode 100644 WebFundamentals/about.txt
+ create mode 100644 assignments.txt
+ create mode 100644 iOS/about.txt
+ create mode 100644 netCore/about.txt
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+nothing to commit, working directory clean
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git remote add origin git@github.com:meerabhardwaj/DojoAssignments.git
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git push -u origin master
+Enter passphrase for key '/Users/meerabhardwaj/.ssh/id_rsa': 
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (19/19), 6.25 KiB | 0 bytes/s, done.
+Total 19 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To git@github.com:meerabhardwaj/DojoAssignments.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ ls
+MEAN		Ruby		assignments.txt	netCore
+Python		WebFundamentals	iOS
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ touch readme.md
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ vi readme.md 
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git add .
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git reset -h
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] <tree-ish> [--] <paths>...
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git log
+commit 46293fc9f30404b3243e063dad5b478a4869f8ad
+Author: Meera Bhardwaj <meerabhardwaj@gmail.com>
+Date:   Mon Apr 17 18:58:55 2017 -0700
+
+    created initial directories for assignments and completed assignments for HTML
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ touch asshole.gif
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	asshole.gif
+
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git add .
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git commit -m "mistake on purpose"
+[master 162a67c] mistake on purpose
+ 2 files changed, 1 insertion(+)
+ create mode 100644 asshole.gif
+ create mode 100644 readme.md
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git log
+commit 162a67c73d1a60bb3b8ed19d60ff63332e040ea6
+Author: Meera Bhardwaj <meerabhardwaj@gmail.com>
+Date:   Mon Apr 17 19:12:01 2017 -0700
+
+    mistake on purpose
+
+commit 46293fc9f30404b3243e063dad5b478a4869f8ad
+Author: Meera Bhardwaj <meerabhardwaj@gmail.com>
+Date:   Mon Apr 17 18:58:55 2017 -0700
+
+    created initial directories for assignments and completed assignments for HTML
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git push origin master
+Enter passphrase for key '/Users/meerabhardwaj/.ssh/id_rsa': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 339 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:meerabhardwaj/DojoAssignments.git
+   46293fc..162a67c  master -> master
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git revert -h
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <n>    parent number
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git revert 162a67c
+[master efe0958] Revert "mistake on purpose"
+ 2 files changed, 1 deletion(-)
+ delete mode 100644 asshole.gif
+ delete mode 100644 readme.md
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git push origin master
+Enter passphrase for key '/Users/meerabhardwaj/.ssh/id_rsa': 
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 260 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:meerabhardwaj/DojoAssignments.git
+   162a67c..efe0958  master -> master
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ touch readme.md
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ vi readme.md 
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git add .
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git commit -m "Created a readme.md"
+[master 5bab7a1] Created a readme.md
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+Katharines-MacBook-Air:DojoAssignments meerabhardwaj$ git push origin master
+Enter passphrase for key '/Users/meerabhardwaj/.ssh/id_rsa': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:meerabhardwaj/DojoAssignments.git
+   efe0958..5bab7a1  master -> master
