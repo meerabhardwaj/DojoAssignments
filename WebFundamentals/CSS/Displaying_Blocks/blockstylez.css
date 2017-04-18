@@ -1,0 +1,40 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 1190px;
+ height: 1050px;
+ background-color: tan;
+ margin: 0px auto;
+ padding: 40px;
+}
+#header{
+ height: 118px;
+ vertical-align: top;
+ display: block;
+ text-align: center;
+ margin: 0px auto;
+}
+h1 img{
+  /*margin: auto;*/
+  background-color: white;
+}
+#header img{
+  height: 100px;
+  width: 200px;
+}
+#table img {
+ height: 200px;
+ width: 200px;
+ border: black solid 2px;
+ padding: 15px;
+}
+.pink {
+  background-color: hotpink;
+}
+
+.white {
+  background-color: lightblue;
+}
