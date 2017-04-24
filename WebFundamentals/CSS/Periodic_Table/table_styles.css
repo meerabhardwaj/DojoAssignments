@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1600px;
+  background: beige;
+  padding: 10px;
+}
+h5 {
+  color: red;
+  font-weight: lighter;
+  text-align: center;
+
+}
+  .row_0 h5 {
+    display: inline-block;
+    width: 44.797px;
+    height: 44.797px;
+    padding: 9px;
+  }
+.box {
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  width: 44.797px;
+  height: 44.797px;
+  padding: 8px;
+  margin-bottom: 4px;
+
+}
+  .box h5 {
+    color: black;
+  }
+  .box h3 {
+    color: midnightblue;
+  }
+.row_vertical {
+  display: inline-block;
+  width: 45px;
+  height: 404px;
+  /*padding: 20px 16px 16px 16px;*/
+}
+  .row_vertical h5 {
+    width: 44.797px;
+    height: 67px;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .row_vertical h5 span {
+    position: relative;
+    left: 110px;
+  }
+.Periodic_Table {
+  display: inline-block;
+  vertical-align: top;
+  width: 1400px;
+}
+#blue {
+  background: lightblue;
+}
+#yellow {
+  background: gold;
+}
+  .row_1 #yellow {
+    position: relative;
+    left: 1084px;
+  }
+  .row_2 #yellow {
+    position: relative;
+    left:684px;
+  }
+  .row_3 #yellow {
+    position: relative;
+    left:684px;
+  }
+   .row_4 #yellow {
+    position: relative;
+    left: 15px;
+  }
+   .row_5 #yellow {
+     position: relative;
+     left: 15px;
+   }
+   .row_6 #yellow {
+      position: relative;
+      left: 15px;
+    }
+    .row_7 #yellow {
+   position: relative;
+   left: 15px;
+  }
+#pink {
+  background: pink;
+  position: relative;
+  left: 15px;
+}
+#green {
+  background: green;
+  position: relative;
+  left: 149px;
+  top: 20px;
+}
