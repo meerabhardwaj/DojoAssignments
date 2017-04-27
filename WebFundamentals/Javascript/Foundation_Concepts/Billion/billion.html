@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>For a Few Billion</title>
+  </head>
+  <body>
+    <script language="javascript" type="text/javascript">
+      function reward() {
+        var total_dollars = 0;
+        for (var days = 0; days < 30; days++) {
+          var daily_dollars = Math.pow(2, days)/100;
+          total_dollars += daily_dollars
+          console.log(total_dollars, daily_dollars, days+1);
+        }
+      }
+      reward()
+// The servent gets paid $10,737,418.23
+      function tenKreward() {
+        var total_dollars = 0;
+        for (var days = 0; total_dollars<=10000; days++) {
+          var daily_dollars = Math.pow(2, days)/100;
+          total_dollars += daily_dollars
+          console.log(total_dollars, daily_dollars, days+1);
+        }
+      }
+      tenKreward()
+// The servant would reach $10K on day 20
+      function Billion_Reward() {
+        var total_dollars = 0;
+        for (var days = 0; total_dollars<=1000000000; days++) {
+          var daily_dollars = Math.pow(2, days)/100;
+          total_dollars += daily_dollars
+          console.log(total_dollars, daily_dollars, days+1);
+        }
+      }
+      Billion_Reward()
+//The servant would reach $1 bilion on day 37
+      function Infinity_Money() {
+        var total_dollars = 0;
+        for (var days = 0; total_dollars<Infinity; days++) {
+          var daily_dollars = Math.pow(2, days)/100;
+          total_dollars += daily_dollars
+          console.log(total_dollars, daily_dollars, days+1);
+          if (total_dollars == Infinity) {
+            break;
+          }
+        }
+      }
+      Infinity_Money()
+// The servant would reach Infinity dollars on day 1025.
+    </script>
+  </body>
+</html>

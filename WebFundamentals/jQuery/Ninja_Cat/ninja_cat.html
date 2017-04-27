@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja to Cat!</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // var alt-src
+        // $('img').click(function() {
+        //   console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+        //   // $(this).toggle("slow");
+          // $('src').hide();
+        // });
+
+        $('.cat0').click(function(){
+          $(this).attr('src', 'ninja_cat/cat0.png');
+        })
+        $('.cat1').click(function(){
+          $(this).attr('src', 'ninja_cat/cat1.png');
+        })
+        $('.cat2').click(function(){
+          $(this).attr('src', 'ninja_cat/cat2.png');
+        })
+        $('.cat3').click(function(){
+          $(this).attr('src', 'ninja_cat/cat3.png');
+        })
+        $('.cat4').click(function(){
+          $(this).attr('src', 'ninja_cat/cat4.png');
+        })
+
+      });
+    </script>
+  </head>
+  <body>
+    <img class="cat0" src='ninja_cat/ninja0.png' data-alt-src='ninja_cat/cat0.png' /><br>
+    <img class="cat1" src='ninja_cat/ninja1.png' data-alt-src='ninja_cat/cat1.png' /><br>
+    <img class="cat2" src='ninja_cat/ninja2.png' data-alt-src='ninja_cat/cat2.png' /><br>
+    <img class="cat3" src='ninja_cat/ninja3.png' data-alt-src='ninja_cat/cat3.png' /><br>
+    <img class="cat4" src='ninja_cat/ninja4.png' data-alt-src='ninja_cat/cat4.png' /><br>
+  </body>
+</html>

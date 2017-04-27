@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My jQuery basic assignment!!</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        console.log('where I can leave notes & debug!');
+        $('.first_click').click(function(){
+            alert('Click the first word in the paragraph below the button you just clicked :)');
+        });
+        $('.first_span').click(function(){
+          $(this).slideUp();
+        })
+        $('.hide').click(function(){
+          $('.hide_show').hide();
+        });
+        $('.show').click(function(){
+          $('.hide_show').show();
+          $('.first_span').show();
+        });
+        $('.toggle').click(function(){
+          $('span').toggle('slow');
+        });
+        $('.slideUp').click(function(){
+          $('.cat').slideUp();
+        });
+        $('.slideDown').click(function(){
+          $('.cat').slideDown();
+        });
+        $('.slideToggle').click(function(){
+          $('.toggleme').slideToggle();
+        });
+        $('.fadeIn').click(function(){
+          $('.fade:hidden:first').fadeIn("slow");
+        });
+        $('.fadeOut').click(function(){
+          $('.fade').fadeOut('slow');
+        });
+        $('.addClass').click(function(){
+          $('.cat').addClass();
+        });$('.before').click(function(){
+          $('.cat').before();
+        });$('.after').click(function(){
+          $('.cat').after();
+        });$('.append').click(function(){
+          $('.cat').append();
+        });$('.html').click(function(){
+          $('.cat').html();
+        });$('.attr').click(function(){
+          $('.cat').attr();
+        });$('.val').click(function(){
+          $('.cat').val();
+        });$('.text').click(function(){
+          $('.cat').text();
+        });$('.data').click(function(){
+          $('.cat').data();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>.click</h1>
+    <button class="first_click" type=".click" name="button">Click Me (if you dare)</button>
+    <p>
+      <span class="first_span">Click</span><span style="display: none">Clack</span> on the button to open an alert.
+    </p>
+    <h1>.hide</h1>
+    <button class="hide" type="hide" name="button">Hide!</button>
+    <p>
+      <span>Click</span><span style="display: none">Clack</span> this button to hide everything below show!
+    </p>
+    <h1>.show</h1>
+    <button class="show" type="show" name="button">Show!</button>
+    <p>
+      <span>Click</span><span style="display: none">Clack</span> this button to show everything that you just hid!
+    </p>
+    <div class="hide_show">
+      <h1>.toggle</h1>
+      <button class="toggle" type="toggle" name="button">Click me!</button>
+      <p>
+        Toggle between the words Click and Clack in the paragraphs above!!
+      </p>
+      <h1>.slideUp</h1>
+      <button class="slideUp" type="slideUp" name="button">Click me!</button>
+      <img class="cat" src="https://media3.giphy.com/media/smHX3ZraxPu0g/giphy.gif" alt="sliding up with futility" />
+      <p>Click to show this cat how to slide up!</p>
+      <h1>.slideDown</h1>
+      <button class="slideDown" type="button" name="button">Click me!</button>
+      <img class="panda" src="https://media1.giphy.com/media/z7B0wEbfJhevu/giphy.gif" alt="panda sliding down a slide" />
+      <p>The panda knows how to slide down!! Click to show that cat!</p>
+      <h1>.slideToggle</h1>
+      <button class="slideToggle" type="slideToggle" name="button">Click me!</button>
+      <p class="toggleme">You, too, can do magic! Click as many times as you want and make me disappear or reappear!</p>
+      <h1>.fadeOut</h1>
+      <button class="fadeOut" type="fadeOut" name="button">Click me!</button>
+      <p>What a great fade, click to let him take a break!</p>
+      <img class="fade" src="https://media4.giphy.com/media/ZKShTYf6ggmd2/giphy.gif" alt="a really awesome fade" />
+      <h1>.fadeIn</h1>
+      <button class="fadeIn" type="fadeIn" name="button">Click me!</button>
+      <p>Click to see what a great fade looks like!</p>
+      <h1>.addClass</h1>
+      <button class="addClass" type="addClass" name="button">Click me!</button>
+      <p></p>
+      <h1>.before</h1>
+      <button class="before" type="before" name="button">Click me!</button>
+      <p></p>
+      <h1>.after</h1>
+      <button class="after" type="after" name="button">Click me!</button>
+      <p></p>
+      <h1>.append</h1>
+      <button class="append" type="append" name="button">Click me!</button>
+      <p></p>
+      <h1>.html</h1>
+      <button class="html" type="html" name="button">Click me!</button>
+      <p></p>
+      <h1>.attr</h1>
+      <button class="attr" type="attr" name="button">Click me!</button>
+      <p></p>
+      <h1>.val</h1>
+      <button class="val" type="val" name="button">Click me!</button>
+      <p></p>
+      <h1>.text</h1>
+      <button class="text" type="text" name="button">Click me!</button>
+      <p></p>
+      <h1>.data</h1>
+      <button class="data" type="data" name="button">Click me!</button>
+      <p></p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+img {
+  width: 200px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  font-family: sans-serif;
+  border-style: outset;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+#wrapper {
+  padding: 30px;
+}

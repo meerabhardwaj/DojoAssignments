@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Test</title>
+    <script type="javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        var dojo="or some data!";
+        console.log('leave yourself a message');
+        console.log(dojo);
+        // alert box pops up and says something
+        alert('you are working with JQuery!');
+        // $('h4').click(function(){
+        //   alert('hello');
+        // })
+        //.hide and .show can toggle the same property
+        //the higher it is in the code, that's the way the page will show after loading
+        //.hover is activated when you put your cursor over an item (made up of mouse over and mouse out)
+        //.text will reassign the text value, .text("this is what the text says now")
+        $('h4').hover(function(){
+          $('h4').text('just kidding ;)');
+        });
+        //.css allows you to mess with the properties!
+
+      });
+    </script>
+  </head>
+  <body>
+    <h4>Click me!</h4>
+  </body>
+</html>

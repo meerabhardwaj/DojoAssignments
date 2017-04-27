@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Range Print</title>
+  </head>
+  <body>
+    <script language="javascript" type="text/javascript">
+      var start = 4;
+      var end = 8;
+      var skip = 2;
+      function printrange() {
+        if (typeof skip === "undefined") {
+          skip = 1;
+        }
+        if (typeof end=== "undefined") {
+          end = start;
+          start = 0;
+        }
+        if (start < end && skip > 0) {
+          while (start < end) {
+            console.log(start);
+            start += skip;
+          }
+        }
+        else if (start > end && skip < 0) {
+          while (start > end) {
+            console.log(start);
+            start += skip;
+          }
+        }
+      }
+      printrange()
+    </script>
+  </body>
+</html>

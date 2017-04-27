@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Random Chance</title>
+  </head>
+  <body>
+    <script language="javascript" type="text/javascript">
+      // "use strict";
+      // Function that takes the number of quarters (1 quarter = 1 game)
+      var quarters = 20; //#quarters you have to begin with
+      var walk = 200;//when you walk away from the slots table and buy a beer
+      function slots() {
+        console.log(walk,quarters);
+        //change to win is 1/100, winning gets between 50-100 quarters
+        while (quarters < walk || quarters == 0) {//person wins if they have over 200 quarters or loses when they run out of quarters
+            var toss = Math.random ();
+            if (true) { //if you win!
+              var max = 100; //max number of quarters you can win
+              var min = 50; //min number of quartes you can win
+              var winnings = Math.floor(Math.random() * (max-min +1)) + min;
+              console.log(winnings);
+              quarters += winnings;
+              console.log(quarters);
+            }
+            else {
+              quarters--;
+              // console.log (quarters);
+            }
+            // console.log(quarters);
+        }
+      }
+      slots()
+    </script>
+  </body>
+</html>
